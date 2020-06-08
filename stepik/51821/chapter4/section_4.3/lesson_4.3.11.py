@@ -13,11 +13,7 @@
 
 a, b, c = [int(input()) for i in range(0, 3)]
 if (a + b > c) and (c + b > a) and (a + c > b):
-    if (a*a + b*b == c*c) or (a*a + c*c == b*b) or (c*c + b*b == a*a):
-        print("right")
-    elif (a*a + b*b < c*c) or (a*a + c*c < b*b) or (c*c + b*b < a*a):
-        print("obtuse")
-    else:
-        print("acute")
+    print('right' if (a*a + b*b == c*c) or (a*a + c*c == b*b) or (c*c + b*b == a*a)
+          else 'obtuse' if (a*a + b*b < c*c) or (a*a + c*c < b*b) or (c*c + b*b < a*a) else 'acute')
 else:
     print("impossible")
