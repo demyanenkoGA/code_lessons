@@ -11,6 +11,7 @@
 
 print('YES' if 0 in {int(input()) for i in range(int(input()))} else 'NO')
 
+# print('YES' if 0 in [int(input()) for i in range(int(input()))] else 'NO')
 """
 s = []
 for i in range(int(input())):
