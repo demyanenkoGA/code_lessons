@@ -12,11 +12,9 @@
 print(len([i for i in range(int(input())) if int(input()[-1]) == 0]))
 
 """
-a = int(input())
 s = 0
-for i in range(1, a+1):
-    x = input()
-    if int(x[-1]) == 0:
+for i in range(int(input())):
+    if int(input()[-1]) == 0:
         s += 1
 print(s)
 """
