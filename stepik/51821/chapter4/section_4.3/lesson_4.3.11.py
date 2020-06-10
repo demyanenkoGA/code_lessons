@@ -11,7 +11,7 @@
 # "impossible", если входные числа не образуют треугольник.                                     |
 # ----------------------------------------------------------------------------------------------|
 
-a, b, c = [int(input()) for i in range(0, 3)]
+a, b, c = [int(input()) for i in range(3)]
 if (a + b > c) and (c + b > a) and (a + c > b):
     print('right' if (a*a + b*b == c*c) or (a*a + c*c == b*b) or (c*c + b*b == a*a)
           else 'obtuse' if (a*a + b*b < c*c) or (a*a + c*c < b*b) or (c*c + b*b < a*a) else 'acute')
