@@ -9,6 +9,9 @@
 # Вычислите количество чисел, которые оканчиваются на 0.                            |
 # --------------------------------------------------------------------------------- |
 
+print(len([i for i in range(int(input())) if int(input()[-1]) == 0]))
+
+"""
 a = int(input())
 s = 0
 for i in range(1, a+1):
@@ -16,3 +19,6 @@ for i in range(1, a+1):
     if int(x[-1]) == 0:
         s += 1
 print(s)
+"""
+
+# print(len([i for i in range(int(input())) if int(input()) % 10 == 0]))
