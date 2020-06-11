@@ -17,3 +17,9 @@ if (a + b > c) and (c + b > a) and (a + c > b):
           else 'obtuse' if (a*a + b*b < c*c) or (a*a + c*c < b*b) or (c*c + b*b < a*a) else 'acute')
 else:
     print("impossible")
+
+"""
+a, b, c = sorted(int(input()) for i in range(3))
+print(f"{'impossible' if a+b<=c else 'right' if (a**2 + b**2 - c**2)==0 
+else 'obtuse' if (a**2 + b**2 - c**2)<0 else 'acute'}")
+"""

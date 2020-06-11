@@ -13,3 +13,5 @@ a, b = [int(input()) for i in range(2)]
 for i in range(a, b + 1):
     if i % 2 == 0:
         print(i)
+
+# [print(i) for i in range(int(input()), int(input()) + 1) if i % 2 == 0]
